@@ -1,0 +1,20 @@
+:root {
+    --bs-secondary: #ff8800 !important;
+}
+
+.btn-secondary,
+.badge.bg-secondary,
+.text-bg-secondary,
+.bg-secondary,
+.border-secondary {
+  background-color: var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+  color: #fff !important;
+}
+
+/* outline/outline-like varianty */
+.btn-outline-secondary {
+  color: var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+  background-color: transparent !important;
+}

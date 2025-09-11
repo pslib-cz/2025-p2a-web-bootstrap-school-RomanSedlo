@@ -10,21 +10,26 @@
 
 <body>
   <div id="app">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg justify-content-between">
-        <img src="public/vite.svg" alt="vite logo" width="30" height="24" />
-        <a class="navbar-brand me-auto" href="##">SOŠ Digital</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <div class="container-fluid px-0">
+      <nav class="navbar navbar-expand-lg justify-content-between shadow">
+        <div class="d-flex align-items-center ms-4">
+          <img src="./images/logo.svg" alt="SOŠ logo" width="30" height="24" />
+          <a class="navbar-brand ms-2 p-0 m-0 h2" href="##">SOŠ Digital</a>
+        </div>
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav align-items-center">
-            <li class="nav-item"><a href="#" class="nav-link">Domov</a></li>
-            <li class="nav-item"><a href="#2" class="nav-link">O nás</a></li>
-            <li class="nav-item"><a href="#3" class="nav-link">Kontakt</a></li>
+        <div class="collapse navbar-collapse me-4" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a href="#" class="nav-link active">Domů</a></li>
+            <li class="nav-item"><a href="#2" class="nav-link">Studijní obory</a></li>
+            <li class="nav-item"><a href="#3" class="nav-link">Novinky</a></li>
+            <li class="nav-item"><a href="#3" class="nav-link">Události</a></li>
+            <li class="nav-item"><a class="btn btn-primary" href="#4" role="button">Přihláška</a></li>
           </ul>
         </div>
       </nav>
+      <span class="badge text-bg-secondary">Fiktivní ukázkový web</span>
     </div>
   </div>
   <script type="module" src="/src/main.js"></script>
