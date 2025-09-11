@@ -1,20 +1,43 @@
 :root {
-    --bs-secondary: #ff8800 !important;
+  --bs-tertiary: #ff8800 !important;
 }
 
-.btn-secondary,
-.badge.bg-secondary,
-.text-bg-secondary,
-.bg-secondary,
-.border-secondary {
-  background-color: var(--bs-secondary) !important;
-  border-color: var(--bs-secondary) !important;
+
+.bg-tertiary {
+  background-color: var(--bs-tertiary) !important;
   color: #fff !important;
 }
 
-/* outline/outline-like varianty */
-.btn-outline-secondary {
-  color: var(--bs-secondary) !important;
-  border-color: var(--bs-secondary) !important;
-  background-color: transparent !important;
+
+.btn-tertiary,
+.badge.bg-tertiary,
+.text-bg-tertiary,
+.bg-tertiary,
+.border-tertiary {
+    background-color: var(--bs-tertiary) !important;
+    border-color: var(--bs-tertiary) !important;
+    color: #fff !important;
+}
+
+.btn-outline-tertiary {
+    color: var(--bs-tertiary) !important;
+    border-color: var(--bs-tertiary) !important;
+    background-color: transparent !important;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+.ms-4.me-4 {
+    margin-top: 1rem;
+}
+
+.text-muted-custom {
+    color: #858585 !important; /* Bootstrap šedá */
 }
