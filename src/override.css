@@ -22,7 +22,3 @@ h1 {
 .ms-4.me-4 {
     margin-top: 1rem;
 }
-
-.text-muted-custom {
-    color: #858585 !important; /* Bootstrap šedá */
-}
