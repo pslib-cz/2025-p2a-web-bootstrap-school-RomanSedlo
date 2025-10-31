@@ -1,17 +1,33 @@
+:root {
+    --d_orange: rgb(245, 133, 5);
+    --r_mar: 1em;
+}
+
 section {
+    padding-top: 3em;
     padding-bottom: 3rem;
+    margin-top: var(--r_mar);
+    margin-bottom: var(--r_mar);
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.bg-primary {
+  background-color: var(--d_orange) !important;
+}
+
+.page-item:not(.active):not(.disabled) .page-link {
+  color: var(--d_orange) !important;
 }
 
 .hero {
     background-color: #fff;
 }
 
-.obory {
+.bg-gray {
     background-color: #f2f2f4;
-}
-
-h1 {
-    font-weight: 700;
 }
 
 .navbar-brand {
