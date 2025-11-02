@@ -6,8 +6,8 @@
   <link rel="icon" type="image/svg+xml" href="/2025-p2a-web-bootstrap-school-RomanSedlo/assets/logo-SM5elvu8.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SOŠ Digital WEB</title>
-  <script type="module" crossorigin src="/2025-p2a-web-bootstrap-school-RomanSedlo/assets/index-BL5dn5XL.js"></script>
-  <link rel="stylesheet" crossorigin href="/2025-p2a-web-bootstrap-school-RomanSedlo/assets/index-B-TNn4Id.css">
+  <script type="module" crossorigin src="/2025-p2a-web-bootstrap-school-RomanSedlo/assets/index-Dp24srJ9.js"></script>
+  <link rel="stylesheet" crossorigin href="/2025-p2a-web-bootstrap-school-RomanSedlo/assets/index-BOtQD_ss.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             <li class="nav-item"><a href="#hero" class="nav-link active">Domů</a></li>
             <li class="nav-item"><a href="#obory" class="nav-link">Studijní obory</a></li>
             <li class="nav-item"><a href="#news" class="nav-link">Novinky</a></li>
-            <li class="nav-item"><a href="#udalosti" class="nav-link">Události</a></li>
+            <li class="nav-item"><a href="#events" class="nav-link">Události</a></li>
             <li class="nav-item"><a class="btn btn-primary" href="#prihlaska" role="button">Přihláška</a></li>
           </ul>
         </div>
@@ -62,7 +62,7 @@
         </div>
       </div>
     </header>
-    <section class="obory bg-gray">
+    <section id="obory" class="bg-gray">
       <div class="container">
         <div class="">
           <h2>Studijní obory</h2>
@@ -83,7 +83,7 @@
         </div>
       </div>
     </section>
-    <section class="news container">
+    <section id="news" class="container">
       <div class="d-flex justify-content-between align-items-center mb-2">
         <h2>Novinky</h2>
         <nav class="navbar">
@@ -152,7 +152,7 @@
         </ul>
       </nav>
     </section>
-    <section class="events container">
+    <section id="events" class="container">
       <h2>Nadcházející události</h2>
       <ul class="list-group pt-2" style="max-width: 48em;">
 
@@ -194,8 +194,8 @@
               <span class="badge bg-warning">Přednáška</span>
             </div>
           </div>
-
         </li>
+
         <li class="list-group-item">
           <div class="d-flex justify-content-between align-items-top">
             <div class="d-flex align-items-center">
@@ -214,43 +214,230 @@
               <span class="badge bg-success">Pro veřejnost</span>
             </div>
           </div>
-
         </li>
+
       </ul>
     </section>
-    <section class="galery bg-gray">
-      <div class="d-flex justify-content-between align-items-center">
-        <div>
-          <h2>Galerie</h2>
-          <p>Ukázka použití komponenty Carousel. Obrázky mají nastavenou šířku (width) a výšku (height) tak, aby obrázek
-            mohl zabírat prostor ještě před jeho plným načtením, a tím se zmírnily posuny obsahu (Cumulative layout
-            shifts – CLS).</p>
-        </div>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/2025-p2a-web-bootstrap-school-RomanSedlo/images/aula.webp" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="/2025-p2a-web-bootstrap-school-RomanSedlo/images/BE-trida.webp" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="/2025-p2a-web-bootstrap-school-RomanSedlo/images/BS-dilna.webp" class="d-block w-100" alt="...">
+    <section id="galery" class="bg-gray">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-12">
+            <h2>Galerie</h2>
+            <p>Ukázka použití komponenty Carousel. Obrázky mají nastavenou šířku (width) a výšku (height) tak, aby
+              obrázek
+              mohl zabírat prostor ještě před jeho plným načtením, a tím se zmírnily posuny obsahu (Cumulative layout
+              shifts – CLS).</p>
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner rounded shadow">
+                <div class="carousel-item active">
+                  <img src="/2025-p2a-web-bootstrap-school-RomanSedlo/images/aula.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/2025-p2a-web-bootstrap-school-RomanSedlo/images/BE-trida.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/2025-p2a-web-bootstrap-school-RomanSedlo/images/BS-dilna.webp" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
     </section>
+    <section id="faq" class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-12">
+          <h2>Časté dotazy</h2>
+          <div class="accordion mt-3" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Jak podat přihlášku?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Vyplňte online formulář, přiložte požadované přílohy a sledujte e-mail pro další pokyny.
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Přijímací řízení
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Součástí je motivační rozhovor a ukázka dosavadních prací (u designu a médií).
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Možnosti stipendií
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Nabízíme prospěchová stipendia a podporu pro mimořádné výsledky v soutěžích.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="card bg-primary mt-4 mt-lg-0">
+            <div class="card-body p-5">
+              <h2><strong>Přihlaš se na SOŠ Digital</strong></h2>
+              <p>
+                Staň se součástí kreativní a technologické komunity. Přihlášky příjmáme online
+              </p>
+              <a href="#" class="btn btn-light" role="button">Vyplnit přihlášku</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="bg-gray">
+      <div class="container">
+        <h2>Kontakt</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h4>Napište nám</h4>
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="inputName" class="form-label">Jméno</label>
+                    <input type="name" class="form-control" id="inputName">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputObject" class="form-label">Předmět</label>
+                    <input type="text" class="form-control" id="inputObject">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputMessage" class="form-label">Zpráva</label>
+                    <textarea class="form-control" id="inputMessage" style="height: 100px"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Souhlasím se zpracováním osobních údajů
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Odeslat</button>
+                    <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <h4>Kde nás najdete</h4>
+            <div class="row g-3 my-3">
+              <div class="col-sm-6">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <address>
+                      <strong class="card-title">Adresa</strong> <br>
+                      U Digitálu 12 <br>
+                      460 01 Liberec
+                    </address>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card bg-transparent">
+                  <div class="card-body">
+                    <address>
+                      <strong class="card-title">Kontakt</strong> <br>
+                      <a href="#" class="card-link">+420 123 456 789</a> <br>
+                      <a href="#" class="card-link">info@sosdigital.cz</a>
+                    </address>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <h5>SOŠ Digital</h5>
+            <p class="lighter">Moderní vzdělávání v IT, designu a digitálních médiích. Studujte u nás, jsme vaše
+              jednička!</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h6>Navigace</h6>
+            <ul class="list-unstyled">
+              <li><a href="/" type>Domů</a></li>
+              <li><a href="#obory">Obory</a></li>
+              <li><a href="#news">Novinky</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h6>Dokumenty</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Školní řád</a></li>
+              <li><a href="#">GDPR</a></li>
+              <li><a href="#">Pro rodiče</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h6>Odběr novinek</h6>
+            <ul class="list-unstyled">
+              <li class="my-2">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Váš e-mail</label>
+                </div>
+              </li>
+              <li>
+                <a class="btn btn-primary w-100" href="#odebirat" role="button">Odebírat</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="lighter d-flex align-items-center justify-content-between">
+          <div>
+            © SOŠ Digital
+          </div>
+          <div>
+            <a href="">Instagram</a>
+            <a href="">YouTube</a>
+            <a href="">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 
